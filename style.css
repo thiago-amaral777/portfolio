@@ -83,6 +83,9 @@ header a:hover {
     transform: scale(1.02);
 }
 
+/* MAIN */
+
+
 
 /* SECTION 1 - QUEM É THIAGO? */
 
@@ -91,15 +94,13 @@ header a:hover {
     max-width: 1200px;
     
     border: #2a1915 solid ;
-    margin: auto;
+    margin: 25px;
     padding: 3%;
     border-radius: 20px;
 }
 
 @media (max-width: 1330px) {
-  main {
-    margin: 25px;
-  }
+  
 }
 
 article {
@@ -120,6 +121,7 @@ img#foto_perfil {
     width: 400px;
     height: 400px;
     border-radius: 10px;
+    margin-bottom: 7px;
 
 }
 
@@ -156,22 +158,10 @@ article p#arroba {
   #skill-cards {
     flex-direction: column;
     text-align: center;
-  }
 
-  .skill-card {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0px;
-    gap: 75px;
-    background-color: var(--cor1);
-    padding: 20px;
-    width: 300px;
-    height: 270px;
+  }    
 }
-    
-    
-}
+
 
 section#minhas-habilidades {
     background-color: var(--cor3);
@@ -192,7 +182,13 @@ section#minhas-habilidades #skill-cards {
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
-    gap: 75px;
+    gap: 35px;
+}
+
+@media (max-width: 868px) {
+    section#minhas-habilidades #skill-cards {
+        gap: 0px;
+    }
 }
 
 .skill-card {
@@ -206,6 +202,22 @@ section#minhas-habilidades #skill-cards {
     width: 570px;
     height: 270px;
     border-radius: 20px;
+}
+
+@media (max-width: 868px) {
+
+    .skill-card {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 75px;
+    background-color: var(--cor1);
+    padding: 40px 20px;
+    width: 95%;
+    height: 270px;
+    border-radius: 20px;
+    }
 }
 
 .skill-card > p {
