@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegação principal">
             <a href="#">QUEM SOU EU?</a>
             <a href="minha-historia.html">MINHA HISTÓRIA</a>
         </nav>
@@ -17,7 +17,7 @@
 
     <main>
         
-        <section class="quem-é-thiago">
+    <section class="quem-e-thiago">
             <article>
                 <div>
                     <h1>Thiago Amaral</h1>
@@ -26,7 +26,7 @@
                         Construindo projetos com HTML, CSS e cada vez mais foco em performance e design moderno.
                     </p>
 
-                    <a id="redes-sociais" href="#">MINHAS REDES SOCIAIS</a>
+                    <a id="redes-sociais" href="#section-redes-sociais">MINHAS REDES SOCIAIS</a>
         
                     
                     </a>
@@ -43,9 +43,7 @@
 
         </section>
 
-        <section id="minhas-habilidades">
-
-            <a name="minhas-habilidades"></a>
+        <section id="minhas-habilidades" aria-label="Minhas habilidades">
 
             <h2>MINHAS HABILIDADES</h2>
 
@@ -69,29 +67,29 @@
 
         </section>
 
-        <section id="minhas-habilidades">
+        <section id="minhas-redes-sociais" aria-label="Minhas redes sociais">
 
-            <a name="redes-sociais"></a>
+            
 
             <h2>MINHAS REDES SOCIAIS</h2>
 
-            <div id="skill-cards">
-                <article class="skill-card">
+            <div id="redes-sociais-cards">
+                <a class="redes-sociais-link" href="">
+                    <article class="redes-sociais-cards">
+                        <img class="redes-sociais-icons" src="icones/instagram.svg" alt="instagram">
+                        <p>Instagram</p>
+                    </article>
+                </a>
 
-                    <img class="habilidades" src="icones/html5.svg" alt="HTML5">
-
-                    <p>Estou aprendendo a estruturar páginas com HTML5, utilizando tags semânticas para criar layouts organizados, acessíveis e bem estruturados.</p>
-
-                </article>
-            
-                <article class="skill-card">
-
-                    <img class="habilidades" src="icones/css3-alt.svg" alt="CSS3">
-
-                    <p>Aprendendo a transformar estrutura em design, utilizando CSS para criar layouts responsivos e visualmente organizados.</p>
-
-                </article>
+                <a class="redes-sociais-link" href="">
+                    <article class="redes-sociais-cards">
+                        <img class="redes-sociais-icons" src="icones/github.svg" alt="github">
+                        <p>Github</p>
+                    </article>
+                </a>
             </div>
+
+            <a name="section-redes-sociais"></a>
 
         </section>
 
