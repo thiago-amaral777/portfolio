@@ -1,0 +1,161 @@
+/* GERAL */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: calmserif;
+    src: url('fontes/calm_serif/Calm\ Serif\ \(DemoVersion\).otf') format(opentype);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fonte1: 'calmserif';
+    --fonte2: 'Quicksand';
+
+    --cor1: ivory;
+    --cor2: #2a1915;
+    --cor3: #645a4e;
+    --cor4: #130f08;
+}
+
+h2 {
+    font-family: var(--fonte2);
+    font-size: 23px;
+}
+
+p {
+    text-align: justify;
+    font-family: Quicksand;
+}
+
+hr {
+    margin: 30px 0px;
+    color: var(--cor2);
+}
+
+
+/* BODY */
+
+
+body {
+    background-color: var(--cor1);
+}
+
+
+/* HEADER */
+
+
+header {
+    font-family: var(--fonte1);
+    text-align: center;
+    margin: 50px;
+    font-weight: bolder;
+}
+
+nav {
+     display: flex;
+  align-items: center;   /* alinha verticalmente */
+  justify-content: center; /* separa */
+  gap: 20px; /* espaço entre texto e imagem */
+}
+
+header a {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 15px 10.3%;
+    text-align: center;
+    border-radius: 5px;
+
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: var(--cor2);    
+    color: var(--cor1);
+    transform: scale(1.02);
+}
+
+/* SECTION 1 - MINHAS HISTÓRIA. */
+
+section#minhas-historia {
+    background-color: var(--cor3);
+    max-width: 100%;
+    border: none;
+    margin: 30px auto;
+    padding: 3% 8%;
+}
+
+section#minhas-historia h2 {
+    padding-bottom: 15px;
+    color: var(--cor1);
+    text-align: center;
+}
+
+.minhas-informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 20px auto;
+    gap: 10px;
+    background-color: var(--cor1);
+    padding: 40px 20px;
+    width: 1200px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.history-cards > p {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+section#minhas-historia .habilidades {
+  height: 60px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.p_divdois {
+    margin: 15px 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+}

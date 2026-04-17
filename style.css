@@ -89,7 +89,9 @@ header a:hover {
 
 /* SECTION 1 - QUEM É THIAGO? */
 
-
+.quem-é-thiago {
+    margin: 10%;
+}
 .quem-é-thiago {
     max-width: 1200px;
     
@@ -150,7 +152,6 @@ article p#arroba {
 .icon:hover {
     transform: scale(1.3);
 }
-
 
 /* SECTION 2 - MINHAS HABILIDADES. */
 
