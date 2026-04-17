@@ -94,7 +94,7 @@ header a:hover {
     max-width: 1200px;
     
     border: #2a1915 solid ;
-    margin: 25px;
+    margin: 25px auto;
     padding: 3%;
     border-radius: 20px;
 }
