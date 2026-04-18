@@ -84,7 +84,7 @@ header a:hover {
 
 
 /* SECTION 1 - QUEM É THIAGO? */
-.quem-e-thiago {
+.section-tipo-1 {
     max-width: 1200px;
     border: #2a1915 solid;
     margin: 25px auto;
@@ -159,8 +159,18 @@ article p#arroba {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* SECTION 2 - MINHAS HABILIDADES */
-section#minhas-habilidades {
+
+section#section-tipo-2 {
     background-color: var(--cor3);
     max-width: 100%;
     border: none;
@@ -168,13 +178,13 @@ section#minhas-habilidades {
     padding: 3% 8%;
 }
 
-section#minhas-habilidades h2 {
+section#section-tipo-2 h2 {
     padding-bottom: 15px;
     color: var(--cor1);
     text-align: center;
 }
 
-section#minhas-habilidades #skill-cards {
+section#section-tipo-2 #skill-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +197,7 @@ section#minhas-habilidades #skill-cards {
         flex-direction: column;
         text-align: center;
     }
-    section#minhas-habilidades #skill-cards {
+    section#section-tipo-2 #skill-cards {
         gap: 0px;
     }
 }
@@ -217,7 +227,7 @@ section#minhas-habilidades #skill-cards {
     margin-bottom: 0px;
 }
 
-section#minhas-habilidades .habilidades {
+section#section-tipo-2 .habilidades {
     height: 150px;
     display: flex;
     margin-left: auto;
@@ -252,7 +262,7 @@ section#minhas-redes-sociais h2 {
     text-align: center;
 }
 
-section#minhas-redes-sociais #redes-sociais-cards {
+section#minhas-redes-sociais #projetos-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,42 +280,39 @@ section#minhas-redes-sociais #redes-sociais-cards {
     }
 }
 
-.redes-sociais-cards {
+.projetos-cards {
     display: block;
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
     gap: 75px;
-    background-color: var(--cor1);
-    padding: 40px 20px;
-    width: 200px;
-    height: 100px;
-    border-radius: 20px;
+    
 }
 
 
-.redes-sociais-cards > p {
+.projetos-cards > p {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 0px;
 }
 
-section#minhas-redes-sociais .redes-sociais-icons {
-    height: 50px;
+section#minhas-redes-sociais .projetos-thumbs {
+    height: 200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 
 .redes-sociais-link {
-    color: var(--cor);
+    color: var(--cor1);
     text-decoration: none;
     transition: transform 0.3s ease;
     
 }
 
 .redes-sociais-link:hover {
-    color: var(--cor3);
+    color: var(--cor2);
     transform: scale(1.01);
 }
 
