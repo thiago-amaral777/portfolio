@@ -25,6 +25,13 @@
 }
 
 /* Tipografia */
+
+h1 {
+    font-size: 55px;
+    font-family: var(--fonte1);
+    font-weight: 900;
+}
+
 h2 {
     font-family: var(--fonte2);
     font-size: 23px;
@@ -41,10 +48,50 @@ hr {
 }
 
 
+
+
+/* SECTION GERAL */
+/* TIPOS DE SECTIONS */
+
+.section-tipo-1 {
+    max-width: 1200px;
+    border: #2a1915 solid;
+    margin: 25px auto;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.section-tipo-1 p {
+    padding: 10px 0px 10px 0px;
+}
+
+.section-tipo-2 {
+    background-color: var(--cor3);
+    max-width: 100%;
+    border: none;
+    margin: 30px auto;
+    padding: 3% 8%;
+}
+
+.section-tipo-2 h2 {
+    padding-bottom: 15px;
+    color: var(--cor1);
+    text-align: center;
+}
+
+
+
+
+
+
 /* BODY */
 body {
     background-color: var(--cor1);
 }
+
+
+
+
 
 
 /* HEADER */
@@ -80,30 +127,19 @@ header a:hover {
 }
 
 
-/* MAIN */
+
+
+
 
 
 /* SECTION 1 - QUEM É THIAGO? */
-.quem-e-thiago {
-    max-width: 1200px;
-    border: #2a1915 solid;
-    margin: 25px auto;
-    padding: 3%;
-    border-radius: 20px;
-}
+/* SECTION CONTEÚDO */
 
-article {
+article#quem-sou-eu {
     display: flex;
     align-items: center;   /* alinha verticalmente */
     justify-content: space-between; /* separa */
     gap: 20px; /* espaço entre texto e imagem */
-}
-
-@media (max-width: 868px) {
-    article {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 img#foto_perfil {
@@ -113,20 +149,6 @@ img#foto_perfil {
     margin-bottom: 7px;
 }
 
-article h1 {
-    font-size: 55px;
-    font-family: var(--fonte1);
-    font-weight: 900;
-}
-
-article p {
-    padding: 10px 0px 10px 0px;
-}
-
-article p#arroba {
-    font-weight: 700;
-    padding-bottom: 0px;
-}
 
 .icon {
     padding: 15px 20px 0px 0px;
@@ -140,7 +162,7 @@ article p#arroba {
 }
 
 
-#redes-sociais {
+#botao-redes-sociais {
     background-color: var(--cor3);
     color: var(--cor1);
     text-decoration: none;
@@ -152,29 +174,32 @@ article p#arroba {
     display: inline-block;
 }
 
-#redes-sociais:hover {
+#botao-redes-sociais:hover {
     background-color: var(--cor2);
     color: var(--cor1);
     transform: scale(1.02);
 }
 
 
-/* SECTION 2 - MINHAS HABILIDADES */
-section#minhas-habilidades {
-    background-color: var(--cor3);
-    max-width: 100%;
-    border: none;
-    margin: 30px auto;
-    padding: 3% 8%;
-}
 
-section#minhas-habilidades h2 {
+
+
+
+
+
+/* SECTION 2 - MINHAS HABILIDADES */
+/* SECTION CONTEÚDO */
+
+article#minhas-habilidades {
+    display: block;
+}
+#minhas-habilidades h2 {
     padding-bottom: 15px;
     color: var(--cor1);
     text-align: center;
 }
 
-section#minhas-habilidades #skill-cards {
+article#minhas-habilidades #skill-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,21 +207,11 @@ section#minhas-habilidades #skill-cards {
     gap: 35px;
 }
 
-@media (max-width: 868px) {
-    #skill-cards {
-        flex-direction: column;
-        text-align: center;
-    }
-    section#minhas-habilidades #skill-cards {
-        gap: 0px;
-    }
-}
-
 .skill-card {
     display: block;
     align-items: center;
     justify-content: center;
-    margin: 20px 0px;
+    margin: 0px;
     gap: 75px;
     background-color: var(--cor1);
     padding: 40px 20px;
@@ -205,19 +220,13 @@ section#minhas-habilidades #skill-cards {
     border-radius: 20px;
 }
 
-@media (max-width: 868px) {
-    .skill-card {
-        width: 95%;
-    }
-}
-
 .skill-card > p {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 0px;
 }
 
-section#minhas-habilidades .habilidades {
+article#minhas-habilidades .habilidades {
     height: 150px;
     display: flex;
     margin-left: auto;
@@ -225,56 +234,31 @@ section#minhas-habilidades .habilidades {
 }
 
 
-.divdois {
-    background-color: var(--cor1);
-    padding: 25px;
-    height: 280px;
-    width: 300px;
-}
 
-.p_divdois {
-    margin: 15px 0px;
-    text-align: center;
-}
+
+
+
+
 
 /* SECTION 3 - MINHAS REDES SOCIAIS */
-section#minhas-redes-sociais {
-    background-color: var(--cor3);
-    max-width: 100%;
-    border: none;
-    margin: 30px auto;
-    padding: 3% 8%;
+/* CONTEÚDO */
+
+article#minhas-redes-sociais {
+    display: block;
 }
 
-section#minhas-redes-sociais h2 {
-    padding-bottom: 15px;
-    color: var(--cor1);
-    text-align: center;
-}
-
-section#minhas-redes-sociais #redes-sociais-cards {
+article#minhas-redes-sociais #redes-sociais-cards {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
     gap: 35px;
 }
-
-@media (max-width: 868px) {
-    #redes-sociais-cards {
-        flex-direction: column;
-        text-align: center;
-    }
-    section#minhas-redes-sociais #redes-sociais-cards {
-        gap: 0px;
-    }
-}
-
 .redes-sociais-cards {
     display: block;
     align-items: center;
     justify-content: center;
-    margin: 20px 0px;
+    margin: 0px;
     gap: 75px;
     background-color: var(--cor1);
     padding: 40px 20px;
@@ -283,14 +267,13 @@ section#minhas-redes-sociais #redes-sociais-cards {
     border-radius: 20px;
 }
 
-
 .redes-sociais-cards > p {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 0px;
 }
 
-section#minhas-redes-sociais .redes-sociais-icons {
+article#minhas-redes-sociais .redes-sociais-icons {
     height: 50px;
     display: flex;
     margin-left: auto;
@@ -298,28 +281,106 @@ section#minhas-redes-sociais .redes-sociais-icons {
 }
 
 .redes-sociais-link {
-    color: var(--cor);
+    color: var(--cor3);
     text-decoration: none;
     transition: transform 0.3s ease;
     
 }
 
 .redes-sociais-link:hover {
-    color: var(--cor3);
+    color: var(--cor4);
     transform: scale(1.01);
 }
 
-.divdois {
-    background-color: var(--cor1);
-    padding: 25px;
-    height: 280px;
-    width: 300px;
+
+
+
+
+
+
+
+/* --- Regras importadas de styleII.css (minha-historia) --- */
+section#minhas-historia {
+    background-color: var(--cor3);
+    max-width: 100%;
+    border: none;
+    margin: 30px auto;
+    padding: 3% 8%;
 }
 
-.p_divdois {
-    margin: 15px 0px;
+section#minhas-historia h2 {
+    padding-bottom: 15px;
+    color: var(--cor1);
     text-align: center;
 }
+
+.minhas-informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 20px auto;
+    gap: 10px;
+    background-color: var(--cor1);
+    padding: 40px 20px;
+    width: 1200px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.history-cards > p {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+section#minhas-historia .icon-historia {
+  height: 30px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* --- Regras importadas de styleIII.css (meus-projetos) --- */
+.section-tipo-1 {
+    max-width: 1200px;
+    border: #2a1915 solid;
+    margin: 25px auto;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+section#minhas-redes-sociais #projetos-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 35px;
+}
+
+.projetos-cards {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 75px;
+}
+
+.projetos-cards > p {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+section#minhas-redes-sociais .projetos-thumbs {
+    height: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+/* RODAPÉ */
 
 footer {
     background-color: var(--cor4);
