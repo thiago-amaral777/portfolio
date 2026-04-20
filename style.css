@@ -47,9 +47,6 @@ hr {
     color: var(--cor2);
 }
 
-
-
-
 /* SECTION GERAL */
 /* TIPOS DE SECTIONS */
 
@@ -79,20 +76,10 @@ hr {
     text-align: center;
 }
 
-
-
-
-
-
 /* BODY */
 body {
     background-color: var(--cor1);
 }
-
-
-
-
-
 
 /* HEADER */
 header {
@@ -131,6 +118,9 @@ header a:hover {
 
 
 
+
+
+/* PÁGINA 1 - QUEM SOU EU? */
 
 /* SECTION 1 - QUEM É THIAGO? */
 /* SECTION CONTEÚDO */
@@ -180,13 +170,6 @@ img#foto_perfil {
     transform: scale(1.02);
 }
 
-
-
-
-
-
-
-
 /* SECTION 2 - MINHAS HABILIDADES */
 /* SECTION CONTEÚDO */
 
@@ -232,13 +215,6 @@ article#minhas-habilidades .habilidades {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
-
-
 
 /* SECTION 3 - MINHAS REDES SOCIAIS */
 /* CONTEÚDO */
@@ -299,20 +275,9 @@ article#minhas-redes-sociais .redes-sociais-icons {
 
 
 
-/* --- Regras importadas de styleII.css (minha-historia) --- */
-section#minhas-historia {
-    background-color: var(--cor3);
-    max-width: 100%;
-    border: none;
-    margin: 30px auto;
-    padding: 3% 8%;
-}
 
-section#minhas-historia h2 {
-    padding-bottom: 15px;
-    color: var(--cor1);
-    text-align: center;
-}
+/* PÁGINA 2 - MINHA HISTÓRIA? */
+/* SECTION - MINHA HISTÓRIA */
 
 .minhas-informacoes {
     display: flex;
@@ -333,7 +298,7 @@ section#minhas-historia h2 {
     margin-bottom: 0px;
 }
 
-section#minhas-historia .icon-historia {
+.section-tipo-2 .icon-historia {
   height: 30px;
   display: flex;
   margin-left: 20px;
@@ -341,16 +306,18 @@ section#minhas-historia .icon-historia {
 }
 
 
-/* --- Regras importadas de styleIII.css (meus-projetos) --- */
-.section-tipo-1 {
-    max-width: 1200px;
-    border: #2a1915 solid;
-    margin: 25px auto;
-    padding: 3%;
-    border-radius: 20px;
-}
 
-section#minhas-redes-sociais #projetos-cards {
+
+
+
+
+
+
+
+/* PÁGINA 3 - MEUS PROJETOS */
+/* SECTION - MINHA HISTÓRIA */
+
+.section-tipo-1 #projetos-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,19 +333,35 @@ section#minhas-redes-sociais #projetos-cards {
     gap: 75px;
 }
 
+article#article-meus-projetos h2 {
+    text-align: center;
+}
+
 .projetos-cards > p {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 0px;
 }
 
-section#minhas-redes-sociais .projetos-thumbs {
+.section-tipo-1 .projetos-thumbs {
     height: 200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    box-shadow: 0px 2px 5px 3px #52522657;
+
 }
+
+
+
+
+
+
+
+
+
+
 
 /* RODAPÉ */
 
